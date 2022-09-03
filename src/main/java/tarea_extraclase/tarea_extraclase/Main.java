@@ -64,12 +64,7 @@ public class Main extends Application {
                 estudianteDoubleLinkedList.add(estudiante);
             }
             //Se imprime con el toString() los valores de los objetos creados, en orden
-            System.out.println(estudianteDoubleLinkedList.toString());
-
-
-            //AQUI TRABAJO HOY, DESPUÉS DE CREAR LA LISTA "estudianteDoubleLinkedList", la cual contiene en sus nodos todas los objetos estudiante
-
-
+            //System.out.println(estudianteDoubleLinkedList.toString());
         }
         //Para imprimir errores comunes que podria desarrollar el BufferedReader
         catch (FileNotFoundException e){

@@ -6,6 +6,8 @@ public class Estudiante_A extends Estudiante {
     private double nota_Promedio_Examenes;
     private double nota_Promedio_Quices;
     private double nota_Promedio_Tareas;
+    private final double nota_A;
+    private final double nota_Final;
 
 
 
@@ -17,6 +19,8 @@ public class Estudiante_A extends Estudiante {
         this.nota_Promedio_Examenes = nota_Promedio_Examenes;
         this.nota_Promedio_Quices = nota_Promedio_Quices;
         this.nota_Promedio_Tareas = nota_Promedio_Tareas;
+        this.nota_A = calculaPromedio();
+        this.nota_Final = calculaFinal();
     }
 
     //Se establecen valores predeterminados para la clase Estudiante_A
@@ -26,6 +30,8 @@ public class Estudiante_A extends Estudiante {
         this.nota_Promedio_Examenes = 0.00;
         this.nota_Promedio_Quices = 0.00;
         this.nota_Promedio_Tareas = 0.00;
+        this.nota_A = 0.00;
+        this.nota_Final = 0.00;
     }
 
 
@@ -40,6 +46,12 @@ public class Estudiante_A extends Estudiante {
     }
     public double getNota_Promedio_Tareas() {
         return nota_Promedio_Tareas;
+    }
+    public double getNota_A() {
+        return nota_A;
+    }
+    public double getNota_Final() {
+        return nota_Final;
     }
 
 
@@ -75,7 +87,7 @@ public class Estudiante_A extends Estudiante {
         double nota_tareas = Double.parseDouble(stringArray[8]);
 
         //Aqui se establece el nuevo objeto tipo Estudiante, utilizando las variables locales almacenadas
-        Estudiante estudiante = new Estudiante_A(carne, nombre_Completo, correo, telefono, nickname, tipo_estudiante,
+        Estudiante estudiante = new Estudiante_A(carne, nombre_Completo, correo, telefono, nickname, "A",
                 nota_examenes, nota_quices, nota_tareas);
 
         return estudiante;
@@ -84,11 +96,7 @@ public class Estudiante_A extends Estudiante {
     //Se necesita un toString para que la lista pueda ser capaz de imprimir los valores
     @Override
     public String toString(){
-        return ("\n"+ "Carnet: "+carnet+ "\n" +"Nombre y apellidos: "+ nombre_Completo + "\n" +"Correo: " + correo +"\n"+ "Telefono: " + telefono + "\n"
-                + "Nickname: " + nickname + "\n" + "Tipo estudiante: " + tipo_Estudiante + "\n" + "Nota promedio (examenes): "+ nota_Promedio_Examenes +
-                "\n" + "Nota promedio (quices): " + nota_Promedio_Quices + "\n" + "Nota promedio (tareas): " + nota_Promedio_Tareas + "\n" +
-                "Nota Proyecto #1: " + null + "\n" + "Nota Proyecto #2: " + null + "\n" + "Nota Proyecto #3: " + null + "\n" + "Nota Promedio (proyectos): " + null
-                + "\n" + "Nota Promedio (Examenes, Quices, Tareas): " + calculaPromedio() + "\n" + "Nota Final: " + calculaFinal());
+        return ("");
     }
 
     @Override

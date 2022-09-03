@@ -6,6 +6,8 @@ public class Estudiante_B extends Estudiante {
     private double nota_Proyecto1;
     private double nota_Proyecto2;
     private double nota_Proyecto3;
+    private final double nota_B;
+    private final double nota_Final;
 
 
 
@@ -16,6 +18,8 @@ public class Estudiante_B extends Estudiante {
         this.nota_Proyecto1 = nota_Proyecto1;
         this.nota_Proyecto2 = nota_Proyecto2;
         this.nota_Proyecto3 = nota_Proyecto3;
+        this.nota_B = calculaPromedio();
+        this.nota_Final = calculaFinal();
     }
 
     //Se establecen valores predeterminados para la clase Estudiante_B
@@ -25,6 +29,8 @@ public class Estudiante_B extends Estudiante {
         this.nota_Proyecto1 = 0.00;
         this.nota_Proyecto2 = 0.00;
         this.nota_Proyecto3 = 0.00;
+        this.nota_B = 0.00;
+        this.nota_Final = 0.00;
     }
 
 
@@ -38,6 +44,12 @@ public class Estudiante_B extends Estudiante {
     }
     public double getNota_Proyecto3() {
         return nota_Proyecto3;
+    }
+    public double getNota_B() {
+        return nota_B;
+    }
+    public double getNota_Final() {
+        return nota_Final;
     }
 
 
@@ -81,11 +93,7 @@ public class Estudiante_B extends Estudiante {
     //Se necesita un toString para que la lista pueda ser capaz de imprimir los valores
     @Override
     public String toString(){
-        return ("\n"+"Carnet: "+carnet+"\n"+"Nombre y apellidos: "+nombre_Completo+"\n"+"Correo: "+this.correo+"\n"+"Telefono: "+this.telefono+"\n"
-                +"Nickname: "+this.nickname+"\n"+"Tipo estudiante: "+this.tipo_Estudiante+"\n"+"Nota promedio (examenes): "+null+
-                "\n"+"Nota promedio (quices): "+null+"\n"+ "Nota promedio (tareas): "+null+"\n"+ "Nota Proyecto #1: "+nota_Proyecto1+"\n"+
-                "Nota Proyecto #2: "+nota_Proyecto2+"\n"+"Nota Proyecto #3: "+nota_Proyecto3+"\n"+ "Nota Promedio (proyectos): "+calculaPromedio()+"\n"+
-                "Nota Promedio (Examenes, Quices, Tareas): "+null+"\n"+ "Nota Final: "+calculaFinal());
+        return ("");
     }
 
     @Override
