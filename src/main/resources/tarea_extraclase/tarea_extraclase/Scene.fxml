@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="712.0" prefWidth="2082.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea_extraclase.tarea_extraclase.VentanaController">
+    <children>
+        <TableView fx:id="tableview" prefHeight="712.0" prefWidth="2082.0">
+            <columns>
+                <TableColumn fx:id="idcarnet" prefWidth="105.0" sortType="DESCENDING" text="Carnet" />
+                <TableColumn fx:id="idnombre" prefWidth="264.0" sortType="DESCENDING" text="Nombre y apellidos" />
+                <TableColumn fx:id="idcorreo" minWidth="8.0" prefWidth="148.0" sortType="DESCENDING" text="Correo" />
+                <TableColumn fx:id="idtelefono" prefWidth="121.0" sortType="DESCENDING" text="Telefono" />
+                <TableColumn fx:id="idnickname" prefWidth="95.0" sortType="DESCENDING" text="Nickname" />
+                <TableColumn fx:id="idtipo" prefWidth="97.0" sortType="DESCENDING" text="Tipo Estudiante" />
+                <TableColumn fx:id="idnotaexamen" prefWidth="164.0" sortType="DESCENDING" text="Nota promedio (examenes)" />
+                <TableColumn fx:id="idnotaquiz" prefWidth="142.0" sortType="DESCENDING" text="Nota promedio (quices)" />
+                <TableColumn fx:id="idnotatarea" prefWidth="143.0" sortType="DESCENDING" text="Nota promedio (tareas)" />
+                <TableColumn fx:id="idnotaproyecto1" prefWidth="107.0" sortType="DESCENDING" text="Nota Proyecto #1" />
+                <TableColumn fx:id="idnotaproyecto2" prefWidth="109.0" sortType="DESCENDING" text="Nota Proyecto #2" />
+                <TableColumn fx:id="idnotaproyecto3" prefWidth="107.0" sortType="DESCENDING" text="Nota Proyecto #3" />
+                <TableColumn fx:id="idnotapromedioproyecto" prefWidth="168.0" sortType="DESCENDING" text="Nota Promedio (Proyectos)" />
+                <TableColumn fx:id="idnotapromedioexamen" prefWidth="245.0" sortType="DESCENDING" text="Nota Promedio (Examenes,Quices,Tareas)" />
+                <TableColumn fx:id="idnotafinal" prefWidth="66.0" sortType="DESCENDING" text="Nota Final" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
